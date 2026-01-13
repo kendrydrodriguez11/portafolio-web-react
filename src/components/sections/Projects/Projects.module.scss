@@ -1,0 +1,93 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+
+  @include responsive(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary-light;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: darken($light, 10%);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $light;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: $primary-light;
+  text-decoration: none;
+  font-weight: 600;
+  transition: $transition-normal;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $primary-light;
+    transition: width $transition-normal;
+  }
+
+  &:hover {
+    color: lighten($primary-light, 10%);
+    gap: 1rem;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.moreProjects {
+  text-align: center;
+  margin-top: 4rem;
+}

@@ -1,0 +1,94 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+
+  @include responsive(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column {
+  @include flex-column;
+  gap: 2rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $primary-light;
+  margin-bottom: 1.5rem;
+}
+
+.cardText {
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.experienceItem {
+  margin-top: 1.5rem;
+}
+
+.company {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $light;
+}
+
+.duration {
+  color: $primary-light;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $light;
+}
+
+.year {
+  color: $primary-light;
+}
+
+.languageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba($primary, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.level {
+  color: $primary-light;
+  font-weight: 600;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: $light;
+  font-size: 1.1rem;
+}

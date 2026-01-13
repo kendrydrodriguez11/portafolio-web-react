@@ -1,0 +1,28 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.footer {
+  background: rgba($dark, 0.95);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid $border;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text {
+  color: $gray;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  color: $primary-light;
+  font-size: 0.9rem;
+}

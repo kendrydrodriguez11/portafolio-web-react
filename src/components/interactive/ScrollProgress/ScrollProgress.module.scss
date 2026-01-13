@@ -1,0 +1,12 @@
+@import '@styles/variables.scss';
+
+.scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(to right, $primary, $primary-light);
+  z-index: 1001;
+  transition: width 0.1s ease;
+}

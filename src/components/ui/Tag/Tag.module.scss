@@ -1,0 +1,30 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: $transition-normal;
+}
+
+.highlight {
+  background: rgba($primary, 0.2);
+  color: lighten($primary-light, 20%);
+  border: 1px solid rgba($primary, 0.3);
+
+  &:hover {
+    background: rgba($primary, 0.3);
+  }
+}
+
+.tech {
+  background: rgba($dark, 0.6);
+  color: $light;
+  border: 1px solid rgba($primary, 0.1);
+
+  &:hover {
+    border-color: rgba($primary, 0.3);
+  }
+}

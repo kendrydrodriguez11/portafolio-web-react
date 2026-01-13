@@ -1,0 +1,80 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  @include responsive(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba($dark, 0.6);
+  border-radius: 15px;
+  text-decoration: none;
+  color: $light;
+  transition: $transition-normal;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+
+  &:hover {
+    background: rgba($dark, 0.8);
+    border-color: $primary-light;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba($primary, 0.2);
+  }
+}
+
+.icon {
+  color: $primary-light;
+  min-width: 32px;
+  font-size: 1.5rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.label {
+  color: $gray;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.location {
+  padding: 2rem;
+  background: rgba($dark, 0.6);
+  border-radius: 15px;
+}

@@ -1,0 +1,132 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($dark, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border;
+  z-index: 1000;
+  transition: $transition-normal;
+
+  &.scrolled {
+    background: rgba($dark, 0.98);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  @include flex-between;
+  height: 80px;
+
+  @include responsive(md) {
+    padding: 0;
+  }
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 800;
+  @include gradient-text;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.desktopNav {
+  display: none;
+  gap: 2.5rem;
+
+  @include responsive(md) {
+    display: flex;
+  }
+}
+
+.navLink {
+  position: relative;
+  color: $light;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition-normal;
+  padding: 0.5rem 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, $primary, $primary-light);
+    transition: width $transition-normal;
+  }
+
+  &:hover,
+  &.active {
+    color: $primary-light;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.menuButton {
+  display: block;
+  background: none;
+  border: none;
+  color: $light;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: $transition-normal;
+
+  @include responsive(md) {
+    display: none;
+  }
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+.mobileNav {
+  background: rgba($dark, 0.98);
+  border-top: 1px solid $border;
+  padding: 1rem;
+  display: none;
+  animation: slideDown 0.3s ease;
+
+  &.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mobileNavLink {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  color: $light;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: $transition-normal;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background: rgba($primary, 0.15);
+    transform: translateX(5px);
+  }
+}

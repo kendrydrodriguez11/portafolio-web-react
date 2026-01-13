@@ -1,0 +1,28 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+.card {
+  @include card-style;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, $primary, transparent);
+  }
+
+  &.hoverable {
+    @include hover-lift;
+    
+    &:hover {
+      border-color: rgba($primary, 0.5);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

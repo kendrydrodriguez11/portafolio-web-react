@@ -1,0 +1,42 @@
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animation-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animation-slide-down {
+  animation: slideDown 0.3s ease forwards;
+}
