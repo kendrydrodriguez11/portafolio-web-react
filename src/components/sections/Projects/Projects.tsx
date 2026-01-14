@@ -26,9 +26,9 @@ const projects = [
   {
     id: 3,
     title: 'Sistema de Gestión de Tickets de Vuelos',
-    description: 'Sistema completo para la gestión de tickets de vuelos con autenticación JWT, AWS S3 para almacenamiento de imágenes y arquitectura de microservicios escalable.',
-    features: ['Reserva de vuelos', 'AWS S3', 'Autenticación JWT', 'Microservicios'],
-    technologies: ['Spring Boot', 'React', 'AWS S3', 'PostgreSQL', 'JWT'],
+    description: 'Sistema para la gestión de tickets de vuelos con autenticación Auth0, AWS S3 para almacenamiento de imágenes y arquitectura de microservicios escalable.',
+    features: ['Reserva de vuelos', 'AWS S3', 'Autenticación Auth0', 'Microservicios', 'Mensajería asíncrona con RabbitMQ'],
+    technologies: ['Spring Boot', 'React', 'RabbitMQ', 'AWS S3', 'PostgreSQL', 'Auth0'],
     githubUrl: 'https://github.com/kendrydrodriguez11/Sistema-gestion-tickets-vuelos'
   },
   {

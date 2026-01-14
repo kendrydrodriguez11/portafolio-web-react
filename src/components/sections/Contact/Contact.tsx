@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contacto" className={styles.contact}>
       <div className={styles.container}>
-        <SectionTitle highlight="Contacto" />
+        <SectionTitle highlight="Contacto">Contacto</SectionTitle>
         
         <Card>
           <div className={styles.grid}>

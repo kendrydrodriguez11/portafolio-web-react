@@ -14,9 +14,11 @@ const About: React.FC = () => {
             <Card>
               <h3 className={styles.cardTitle}>📋 Perfil Profesional</h3>
               <p className={styles.cardText}>
-                Ingeniero en Software graduado de la Universidad Estatal de Milagro, con experiencia en
-                desarrollo backend usando Python y Java. Especializado en arquitecturas de microservicios,
-                integración de servicios cloud, sistemas ERP y APIs robustas.
+                Ingeniero en Software graduado de la Universidad Estatal de Milagro, con
+                experiencia profesional en desarrollo backend con Python (Django) y sólida
+                experiencia técnica en Java y Spring Boot mediante proyectos complejos.
+                Enfocado en el diseño de arquitecturas de microservicios, integración de
+                servicios cloud, sistemas ERP y APIs robustas y escalables.
               </p>
             </Card>
 
@@ -24,7 +26,7 @@ const About: React.FC = () => {
               <h3 className={styles.cardTitle}>💼 Experiencia</h3>
               <div className={styles.experienceItem}>
                 <h4 className={styles.company}>HeyEcuador</h4>
-                <p className={styles.duration}>2025 · 6 meses</p>
+                <p className={styles.duration}>2024 · Un año y medio</p>
                 <p className={styles.cardText}>
                   Desarrollo backend con Python y Django Rest Framework. Implementación de autenticación
                   biométrica, gestión de citas médicas y APIs para servicios de salud.

@@ -15,12 +15,12 @@ const Hero: React.FC = () => {
                 KENDRYD JONAYKER<br />
                 <span className={styles.highlight}>RODRÍGUEZ RONQUILLO</span>
               </h1>
-              <p className={styles.title}>Ingeniero en Software</p>
+              <p className={styles.title}>Backend Developer especializado en Java & Spring Boot</p>
             </div>
             <p className={styles.description}>
-              Desarrollador especializado en arquitecturas de microservicios, APIs REST y sistemas empresariales.
-              Apasionado por crear soluciones escalables, eficientes y de alto rendimiento usando las mejores
-              prácticas de desarrollo.
+              Backend Developer especializado en Java y Spring Boot, con experiencia en
+              arquitecturas de microservicios, APIs REST y sistemas empresariales.
+              Experiencia profesional previa en backend con Python (Django).
             </p>
             <div className={styles.buttons}>
               <Button

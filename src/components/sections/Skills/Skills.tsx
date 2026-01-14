@@ -8,25 +8,25 @@ const skills = [
     id: 1,
     title: 'Lenguajes',
     icon: '💻',
-    items: ['Java (17-21)', 'Python (3.12.6)', 'JavaScript (ES6+)', 'SQL']
+    items: ['Java (17-21)', 'Python (3.12.6)', 'SQL', 'JavaScript (ES6+)  - basico ']
   },
   {
     id: 2,
     title: 'Frameworks',
     icon: '🔧',
-    items: ['Spring Boot', 'Django 5.0', 'React', 'Django Rest Framework']
+    items: ['Spring Boot', 'Django 5.0', 'Django Rest Framework', 'React']
   },
   {
     id: 3,
     title: 'Arquitectura',
     icon: '🏗️',
-    items: ['Microservicios', 'Arquitectura en capas', 'Event-driven', 'API REST']
+    items: ['Microservicios', 'Arquitectura en capas', 'Event-driven', 'MVC']
   },
   {
     id: 4,
     title: 'Bases de Datos',
     icon: '🗄️',
-    items: ['SQL Server', 'PostgreSQL', 'Redis', 'MySQL']
+    items: ['PostgreSQL', 'MySQL', 'Redis']
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ const skills = [
     id: 6,
     title: 'Testing',
     icon: '🧪',
-    items: ['Mockito', 'PyTest', 'JUnit', 'Postman']
+    items: ['Mockito', 'JUnit', 'Postman']
   }
 ];
 
