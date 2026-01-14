@@ -26,7 +26,7 @@ const About: React.FC = () => {
               <h3 className={styles.cardTitle}>💼 Experiencia</h3>
               <div className={styles.experienceItem}>
                 <h4 className={styles.company}>HeyEcuador</h4>
-                <p className={styles.duration}>2024 · Un año y medio</p>
+                <p className={styles.duration}>2024 · 9 meses</p>
                 <p className={styles.cardText}>
                   Desarrollo backend con Python y Django Rest Framework. Implementación de autenticación
                   biométrica, gestión de citas médicas y APIs para servicios de salud.
