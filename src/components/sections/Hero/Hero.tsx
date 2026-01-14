@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
               <Button
                 variant="outline"
                 icon={<FileText size={20} />}
-                onClick={() => window.open('./cv/CV_KENDRYD_RODRIGUEZ_RONQUILLO.pdf', '_blank')}
+                onClick={() => window.open('../cv/CV_KENDRYD_RODRIGUEZ_RONQUILLO.pdf', '_blank')}
               >
                 Descargar CV
               </Button>
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           <div className={styles.imageContainer}>
             <div className={styles.imageWrapper}>
               <img
-                src="/images/perfil.png"
+                src="../cv/profile_photo.png"
                 alt="Kendryd Rodriguez"
                 className={styles.image}
                 onError={(e) => {
