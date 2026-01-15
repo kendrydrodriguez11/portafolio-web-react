@@ -23,7 +23,7 @@ const About: React.FC = () => {
             </Card>
 
             <Card>
-              <h3 className={styles.cardTitle}>💼 Experiencia</h3>
+              <h3 className={styles.cardTitle}>💼 Experiencia Profesional</h3>
               <div className={styles.experienceItem}>
                 <h4 className={styles.company}>HeyEcuador</h4>
                 <p className={styles.duration}>2025 · 9 meses</p>
